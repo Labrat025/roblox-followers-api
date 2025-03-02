@@ -40,3 +40,8 @@ if __name__ == '__main__':
 def home():
     return "API is working! Go to /followers/<user_id> to check the follower count."
 
+
+@app.route('/')
+def home():
+    return "API is working! Go to /followers/<user_id> to check the follower count."
+
