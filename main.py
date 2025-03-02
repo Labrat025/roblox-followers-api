@@ -34,3 +34,9 @@ def get_followers(user_id):
 # Starte die Flask-Anwendung
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
+
+
+@app.route('/')
+def home():
+    return "API is working! Go to /followers/<user_id> to check the follower count."
+
